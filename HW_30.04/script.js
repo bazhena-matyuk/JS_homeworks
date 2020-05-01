@@ -38,9 +38,9 @@ for(let i = 0; i < data.length; i++) {
 }
 
 function addUser() {
-    let firstName = prompt('input first name', 'Vasya');
-    let lastName = prompt('input last name', 'Pypkin');
-    let age = prompt('input age', 40);
+    let firstName = prompt('input first name', 'Elena');
+    let lastName = prompt('input last name', 'Petrova');
+    let age = prompt('input age', 32);
     let tr = document.createElement('tr');
     tr.innerHTML = `            
     <td>${firstName}</td>
@@ -61,10 +61,10 @@ function deleteUser() {
 }
 
 function editUser() {
-    let editUserData = prompt('input name or last name or age');
-    let firstName = prompt('input first name', 'Vasya');
-    let lastName = prompt('input last name', 'Pypkin');
-    let age = prompt('input age', 40);
+    let editUserData = prompt('input first name or last name or age');
+    let firstName = prompt('input first name', 'Svetlana');
+    let lastName = prompt('input last name', 'Ivanova');
+    let age = prompt('input age', 30);
     tdArr = tbody.querySelectorAll('td');
     for(let i = 0; i < tdArr.length; i++) {
         if (editUserData === tdArr[i].innerHTML) {
