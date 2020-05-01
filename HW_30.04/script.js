@@ -62,12 +62,12 @@ function deleteUser() {
 
 function editUser() {
     let editUserData = prompt('input first name or last name or age');
-    let firstName = prompt('input first name', 'Svetlana');
-    let lastName = prompt('input last name', 'Ivanova');
-    let age = prompt('input age', 30);
     tdArr = tbody.querySelectorAll('td');
     for(let i = 0; i < tdArr.length; i++) {
         if (editUserData === tdArr[i].innerHTML) {
+            let firstName = prompt('input first name', 'Svetlana');
+            let lastName = prompt('input last name', 'Ivanova');
+            let age = prompt('input age', 30);
             let tr = tdArr[i].closest('tr');
             tr.innerHTML = `            
             <td>${firstName}</td>
