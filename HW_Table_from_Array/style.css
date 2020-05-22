@@ -1,0 +1,68 @@
+
+html {
+    font-size: 16px;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+td:not(:last-child) {
+    background-color: #b0f9a9;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    width: 14.25rem;
+    height: 2.625rem;
+}
+input {
+    width: 14rem;
+    background-color: #b0f9a9;
+    border: 2px inset #40d631;
+
+}
+tr .theadrow {
+    text-align: center;
+    text-transform: uppercase;
+    background: radial-gradient(at top,#b0f9a9, #40d631);
+}
+.btns_td {
+    border: none;
+}
+table tbody tr:first-child td {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.inputs_block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.inputs_block input {
+    margin: 0.5rem 0.5rem;
+}
+input:focus {
+    outline-color: #18990a;
+}
+button {
+    width: 5.5rem;
+    height: 1.355rem;
+    background: radial-gradient(at top,#b0f9a9, #40d631);
+    border: 2px inset #40d631;
+    border-radius: 5px;
+}
+.delete_user_btn, .cancel_btn {
+    background: radial-gradient(at top,#ff9a99, #ff0000);
+    border: 2px inset #ff0000;
+}
+.edit_user_btn,.submit_btn {
+    margin-right: 0.5rem;
+}
