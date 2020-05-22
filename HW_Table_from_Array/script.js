@@ -38,23 +38,24 @@ function editUser (){
     
     let tdArr = tr.cells;
  
-   for(let i = 0; i < tdArr.length; i++){
-       if(tdArr[i].classList.contains('btns_td')){
+    for(let i = 0; i < tdArr.length; i++){
+        if(tdArr[i].classList.contains('btns_td')){
         tdArr[i].innerHTML = `<button class="submit_btn">OK</button><button class="cancel_btn">Cancel</button>`;
         const submitBtn = tdArr[i].querySelector('.submit_btn');
-        const cancelBtn = tdArr[i].querySelector('.cancel_btn');
         submitBtn.addEventListener('click', editRow);
+        const cancelBtn = tdArr[i].querySelector('.cancel_btn');        
         cancelBtn.addEventListener('click', cancelEdit);
-       }else{
+        }
+        else{
         tdValue = tdArr[i].innerHTML;
         editArr.push(tdValue);
         let input =  document.createElement('input');
         input.value = tdValue;
         tdArr[i].innerHTML = '';
         tdArr[i].append(input);
-       }   
-   } 
-   console.log(editArr);
+        }   
+    } 
+    console.log(editArr);
 
      
 }
