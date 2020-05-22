@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'DIOGENES';
+  src: url(../fonts/DIOGENES.ttf);
+}
+body {
+  font-family: DIOGENES, serif;
+  font-size: 20px;
+  background-image: url(../img/back_all.jpg);
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  
+}
+.users_block{
+  padding: 20px 40px;
+}
+.users_block table {
+  border-collapse: collapse;
+}
+.users_block table td {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border: 2px ridge white;
+}
+.users_block .planet_td {
+  border: none;
+  color: #e43447;
+  cursor: pointer;
+}
+.users_block .planet_td:hover {
+  text-decoration: underline;
+}
+.planet_modal {
+  border: 2px solid white;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+  background-image: url(../img/back_modal.jpg);
+  background-size: cover;
+  text-align: center;
+  
+  
+}
+.planet_modal .close_btn {
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  cursor: pointer;
+  color:#e43447;
+  border: 2px ridge white;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.header_tr td {
+  text-transform: uppercase;
+  text-align: center;
+  color: #e43447;
+}
+.planet_table {
+  margin: 10px auto;
+}
+.planet_table td {
+  border: 2px ridge white;
+  padding: 2px 4px;
+}
+.planet_table .tr_head td {
+  color: #e43447;
+  text-transform: uppercase;
+}
